@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Таблица</title>
 </head>
 <body>
-lol
+    <form action="#">
+        <fieldset>
+            <legend>Общая информация</legend>
+            <p>Фамилия <input type="text" name="surname" placeholder="Иванов"></p>
+            <p>Имя <input type="text" name="surname" placeholder="Иван"></p>
+            <p>Отчество <input type="text" name="surname" placeholder="Иванович"></p>
+            <p>email <input type="text" name="surname" placeholder="mail@mail.ru"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Пол</legend>
+            <input type="radio" id=ContactChoice1 name="sex" value="Male"><label for="ContactChoice1">М</label>
+            <input type="radio" id=ContactChoice2 name="sex" value="Female"><label for="ContactChoice2">Ж</label>
+        </fieldset>
+        <fieldset>
+            <legend>Хобби</legend>
+            <input type="checkbox" id=Choice1 name="hobby" value="Drawing"><label for="Choice1">Рисование</label>
+            <input type="checkbox" id=Choice2 name="hobby" value="Reading"><label for="Choice1">Чтение</label>
+            <input type="checkbox" id=Choice3 name="hobby" value="knitting"><label for="Choice1">Вязание</label>
+            <input type="checkbox" id=Choice4 name="hobby" value="Cooking"><label for="Choice1">Кулинария</label>
+        </fieldset>
+        <br>
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </form>
 </body>
 </html>
