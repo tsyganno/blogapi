@@ -1,13 +1,16 @@
 from django.urls import path
 #from posts.views import PostList, PostDetail, UserList, UserDetail
 from rest_framework.routers import SimpleRouter
-from posts.views import UserViewSet, PostViewSet
+from posts.views import UserViewSet, PostViewSet, TableView
 
 
 router = SimpleRouter()
 router.register('users', UserViewSet, basename='users')
 router.register('', PostViewSet, basename='posts')
-urlpatterns = router.urls
+
+urlpatterns = [
+    path('table/', TableView.as_view(), name='table'),
+] + router.urls
 
 
 """
