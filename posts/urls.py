@@ -1,7 +1,7 @@
 from django.urls import path
 #from posts.views import PostList, PostDetail, UserList, UserDetail
 from rest_framework.routers import SimpleRouter
-from posts.views import UserViewSet, PostViewSet, TableView
+from posts.views import UserViewSet, PostViewSet, TableView, LandingPageView
 
 
 router = SimpleRouter()
@@ -10,6 +10,7 @@ router.register('', PostViewSet, basename='posts')
 
 urlpatterns = [
     path('table/', TableView.as_view(), name='table'),
+    path('landing_page/', LandingPageView.as_view(), name='landing_page'),
 ] + router.urls
 
 

@@ -23,6 +23,10 @@ class TableView(TemplateView):
     template_name = 'posts/table.html'
 
 
+class LandingPageView(TemplateView):
+    template_name = 'posts/landing_page.html'
+
+
 """
 class PostList(generics.ListCreateAPIView):
     queryset = Post.objects.all()
