@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.MENU {
+    position: absolute;
+    width: 1440px;
+    height: 110px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+.COFFEE_HOUSE {
+    position: absolute;
+    width: 304px;
+    height: 53px;
+    left: 80px;
+    top: 29px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+.HOME {
+    position: absolute;
+    width: 51px;
+    height: 36px;
+    left: 868px;
+    top: 37px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+.STORY {
+    position: absolute;
+    width: 57px;
+    height: 36px;
+    left: 965px;
+    top: 37px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+.BLOG {
+    position: absolute;
+    width: 47px;
+    height: 36px;
+    left: 1068px;
+    top: 37px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+.SUBSCRIBE {
+    position: absolute;
+    width: 99px;
+    height: 36px;
+    left: 1161px;
+    top: 37px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+
+
+
+

@@ -1,10 +1,24 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>landing_page</title>
+    <link rel="stylesheet" href="{% static 'posts/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Oswald:wght@300&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <header>
+      <nav class="MENU">
+        <ul>
+          <li><a href="#" class="COFFEE_HOUSE">COFFEE HOUSE</a></li>
+          <li><a href="#" class="HOME">HOME</a></li>
+          <li><a href="#" class="STORY">STORY</a></li>
+          <li><a href="#" class="BLOG">BLOG</a></li>
+          <li><a href="#" class="SUBSCRIBE">SUBSCRIBE</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
