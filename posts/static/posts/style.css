@@ -97,7 +97,15 @@
     text-decoration: none;
 }
 
+.first {
+    position: absolute;
+    width: 1442px;
+    height: 812px;
+    left: -2px;
+    top: -148px;
 
+background: url(image.png);
+}
 
 
 
