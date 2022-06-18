@@ -27,6 +27,10 @@ class LandingPageView(TemplateView):
     template_name = 'posts/landing_page.html'
 
 
+class JavaScriptFirst(TemplateView):
+    template_name = 'posts/java_script.html'
+
+
 """
 class PostList(generics.ListCreateAPIView):
     queryset = Post.objects.all()
