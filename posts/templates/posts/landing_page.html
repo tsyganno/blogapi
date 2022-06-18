@@ -1,31 +1,132 @@
-{% load static %}
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <title>landing_page</title>
-    <link rel="stylesheet" href="{% static 'posts/style.css' %}">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Oswald:wght@300&display=swap" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE HOUSE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
     <header>
-      <nav class="MENU">
-        <ul>
-          <li><a href="#" class="COFFEE_HOUSE">COFFEE HOUSE</a></li>
-          <li><a href="#" class="HOME">HOME</a></li>
-          <li><a href="#" class="STORY">STORY</a></li>
-          <li><a href="#" class="BLOG">BLOG</a></li>
-          <li><a href="#" class="SUBSCRIBE">SUBSCRIBE</a></li>
-        </ul>
-<div class="container">
-          <img src="https://source.unsplash.com/vSuQJKZkt4U/1920x1080" alt="Coffee" style="width:100%;">
-          <div class="centered">take your time</div>
+        <div class="logo"><a href="index.html">COFFEE HOUSE</a></div>
+        <nav class="menu">
+
+            <ul>
+                <li><a href="#panno">HOME</a></li>
+                <li><a href="#story">STORY</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#subscribe">SUBSCRIBE</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="main">
+        <div class="panno" id="panno"> <!-- Большая картинка -->
+            <p>TAKE YOUR TIME</p>
+            <hr>
         </div>
 
+        <div class="story" id="story"> <!-- Story -->
+            <div class="title"><p>STORY</p></div>
 
-      </nav>
+            <div class="blog__content">
 
-    </header>
-  </body>
+                <img src="https://source.unsplash.com/X4RJG4aNi8o/1920x1080">
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Aenean varius eget arcu
+                    quis cursus. Nunc id tortor imperdiet,
+                    vestibulum orci sed, gravida orci. Cras a
+                    enim ac elit eleifend euismod. Class aptent
+                    taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos. Praesent
+                    mattis ultrices est, congue ullamcorper erat
+                    bibendum pulvinar. In accumsan dapibus
+                    accumsan. Maecenas semper est ut nunc feugiat,
+                    vel ultrices ligula commodo. Donec eget
+                    pulvinar nunc, eget pharetra risus.
+                </p>
+            </div>
+        </div>
+
+        <div class="blog" id="blog"> <!-- Blog -->
+
+            <div class="title"><p>BLOG</p></div>
+
+            <div class="blog__content">
+
+                <div class="page">
+
+                    <div class="name__page"><p>Daily Coffee News</p></div>
+                    <img src="https://source.unsplash.com/TYIzeCiZ_60/1920x1080">
+                    <div class="text">
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Aenean
+                            varius eget arcu quis cursus. Nunc id
+                            tortor imperdiet, vestibulum orci sed,
+                            gravida orci. Cras a enim ac elit
+                            eleifend euismod.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="page">
+
+                    <div class="name__page"><p>Dutch Coffee Chains</p></div>
+                    <img src="https://source.unsplash.com/CSQQ6_T0sks/1920x1080">
+                    <div class="text">
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Aenean
+                            varius eget arcu quis cursus. Nunc id
+                            tortor imperdiet, vestibulum orci sed,
+                            gravida orci. Cras a enim ac elit
+                            eleifend euismod.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="page">
+
+                    <div class="name__page"><p>Start Up In Minneapolis</p></div>
+                    <img src="https://source.unsplash.com/9rTEwV_G0Do/1920x1080">
+                    <div class="text">
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Aenean
+                            varius eget arcu quis cursus. Nunc id
+                            tortor imperdiet, vestibulum orci sed,
+                            gravida orci. Cras a enim ac elit
+                            eleifend euismod.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+        <footer id="subscribe">
+            <p class="footer__sub">SUBSCRIBE</p>
+            <p class="footer__email">enter your email</p>
+            <p class="footer__submit">SUBMIT</p>
+        </footer>
+        <div class="copyright">
+            <p>
+                © COPYRIGHT 2021
+            </p>
+        </div>
+
+</body>
+</html>
+
