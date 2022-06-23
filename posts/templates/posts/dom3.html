@@ -1,10 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css55.css">
 </head>
 <body>
-
+    <header>
+<p class="logo">COFEE HOUSE</p>
+    </header>
+    <main>
+        <div class="name_input">
+            <input type="text" class="surname" id="surname" placeholder="Введите Фамилию">
+            <input type="text" class="name" id="name" placeholder="Введите Имя">
+        </div>
+        <div class="choices">
+        <div class="first_part">
+            <div class="every_choice">
+            <input class="checkbox" type="checkbox" id="choice1" name="goods" value="80">
+            <label for="choice1">Эспрессо 80р</label>
+            <input type="text" class="amount choice1" placeholder="0">
+            </div>
+            <div class="every_choice">
+            <input class="checkbox" type="checkbox" id="choice2" name="goods" value="110">
+            <label for="choice2">Американо 110р</label>
+            <input type="text" class="amount choice2" placeholder="0">
+            </div>
+            <div class="every_choice">
+            <input class="checkbox" type="checkbox" id="choice3" name="goods" value="120">
+            <label for="choice3">Латте 120р</label>
+            <input type="text" class="amount choice3" placeholder="0">
+            </div>
+            <div class="every_choice">
+            <input class="checkbox" type="checkbox" id="choice4" name="goods" value="90">
+            <label for="choice4">Капучино 90р</label>
+            <input type="text" class="amount choice4" placeholder="0">
+            </div>
+        </div>
+        <div class="second_part">
+            <div class="every_choice">
+            <input class="checkbox" type="checkbox" id="choice5" name="goods" value="80">
+            <label for="choice5">Шоколадный кекс 80р</label>
+            <input type="text" class="amount choice5" placeholder="0">
+            </div>
+            <div class="every_choice">
+            <input class="checkbox" type="checkbox" id="choice6" name="goods" value="90">
+            <label for="choice6">Черничный кекс 90р</label>
+            <input type="text" class="amount choice6" placeholder="0">
+            </div>
+            <div class="every_choice">
+            <input class="checkbox" type="checkbox" id="choice7" name="goods" value="100">
+            <label for="choice7">Яблочный тарт 100р</label>
+            <input type="text" class="amount choice7" placeholder="0">
+            </div>
+        </div>
+    </div>
+        <p class="so">Итого: <span class="result"> 0 р.</span></p>
+        <button class="btn">ОФОРМИТЬ ЗАКАЗ</button>
+    </main>
+    <script src="js.js"></script>
 </body>
 </html>

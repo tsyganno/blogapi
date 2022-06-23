@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+header{
+    width: 100%;
+    height: 6vw;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+}
+main{
+    height: 45vw;;
+    background-color: #817070;;
+}
+.name_input{
+    display: flex;
+    padding-top: 4vw;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    height: 4vw;
+
+}
+input{
+    background: #817070;
+    text-align: center;
+    margin: 0vw 1vw 0vw 1vw;
+    border: 0.3vw solid #fff;
+    color:#fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5vw;
+}
+input::placeholder{
+    color: #fff;
+    font-size: 1.5vw;
+
+}
+.surname,.name{
+    width: 25vw;
+    transition: 1s;
+}
+.surname:hover,.name:hover{
+    transform: scale(1.3);
+    box-shadow: 0 0 0.2vw 0.2vw lightsalmon;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5vw;
+    margin-bottom: 1vw;
+}
+.first_part{
+    display: flex;
+    flex-direction:column;
+    margin-right: 15vw;
+}
+.second_part{
+    display: flex;
+    flex-direction:column;
+}
+
+.every_choice{
+    display: flex;
+    justify-content:space-between;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 0.7vw;
+    transition: 0.1s;
+}
+.every_choice:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 0.5vw 0.1vw lightcoral;
+}
+.amount{
+    width:3vw;
+    height: 3vw;
+    font-family: 'Oswald', sans-serif;
+    padding: 0.5vw;
+    margin-left: 2vw;
+}
+label{
+    color: #fff;
+    font-size: 1.5vw;
+}
+label {
+	position: relative;
+	padding-left: 3vw;
+	cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+.checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+label:before {
+	content: '';
+	position: absolute;
+	top: -0vw;
+	left: 0;
+	width: 2.2vw;
+	height: 2.2vw;
+	background: #ebe2e2;
+}
+label:after {
+	content: '';
+	position: absolute;
+	top: 0.3vw;
+	left: 0.3vw;
+	width: 1.6vw;
+	height: 1.6vw;
+	background: #817070;
+}
+.checkbox:checked + label:after {
+	background: #6a4646;
+}
+.result,.so {
+    display: flex;
+    justify-content: center;
+    margin-left: 1vw;
+    color: #fff;
+    font-size: 2vw;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+.btn{
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    margin-top: 1vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: #817070;
+    background-color: #FFFFFF;
+    border: 0.3vw solid #FFFFFF;
+    padding: 1.3vw;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color:#817070;
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
