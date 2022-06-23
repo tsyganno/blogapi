@@ -2,9 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приветствие</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <label class="label" for="name">Имя:</label>
+        <input class="input" type="text" name="name1">
 
+        <br>
+
+        <label class="label" for="surname">Фамилия:</label>
+        <input class="input" type="text" name="surname1">
+
+        <br>
+
+        <button class="button">Отправить</button>
+
+        <br>
+
+        <p>Ответ: <span class="result"></span></p>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-size: 30px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Sans Caption', sans-serif;
+
+}
+
+.container{
+    margin: 50px 300px;
+}
+
+.input{
+    margin: 15px 0;
+}
+
+.input:hover{
+    background-color: lightpink;
+}
+
+.button{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.button:hover{
+    color: red;
+    background-color:blanchedalmond;
+}
+
+p{
+    margin: 10px 0;
+}
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+button_ = document.querySelector('.button'); // кнопка Отправить
+result_ = document.querySelector('.result'); // вывод результата
+input_ = document.querySelector('.input'); // все инпутики
+
+name_ = document.querySelector('[name="name1"]');
+surname_ = document.querySelector('[name="surname1"]');
+
+button_.addEventListener("click", function(){
+
+    result_.textContent = "Здравствуйте, " + name_.value + " "
+    + surname_.value + "!";
+
+});
